@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord OAuth2 認證</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2C2F33;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .btn {
+            background-color: #7289DA;
+            color: white;
+            font-size: 16px;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #5C6D97;
+        }
+
+        .container {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+
+        h1 {
+            color: #99AAB5;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Discord 認證</h1>
+    
+    <!-- OAuth2 授權連結，點擊按鈕跳轉 -->
+    <a href="https://discord.com/oauth2/authorize?client_id=1305330183120879787&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A80%2Fcallback&scope=guilds.join+identify" class="btn">點擊此處進行認證</a>
+
+    <div class="container">
+        <h2>您正在進行 Discord 認證</h2>
+        <p>請點擊上方的「點擊此處進行認證」連結以完成認證。</p>
+    </div>
+</body>
+</html>
